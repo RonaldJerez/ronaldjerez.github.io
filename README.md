@@ -1,3 +1,3 @@
-dlanor15.github.com
+dlanor15.github.io
 ===================
 github pages
