@@ -37,3 +37,19 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+.site-nav .page-link.active:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 50%;
+    top: 0.7em;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.site-header {
+	background-color:#cede0e;
+	border-bottom: none;
+}
