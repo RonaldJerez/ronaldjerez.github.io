@@ -43,15 +43,9 @@ $link-color:		#2a7ae2;
 
 a {
   color: $link-color;
-  text-decoration: none;
 
   &:visited {
     color: darken($link-color, 15%);
-  }
-
-  &:hover {
-    color: $text-color;
-    text-decoration: underline;
   }
 }
 
@@ -91,4 +85,3 @@ a {
 .page-content {
 	background-color: $content-color;
 }
-
