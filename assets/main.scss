@@ -12,8 +12,8 @@ $base-line-height:	1.5;
 
 $spacing-unit:		30px;
 
-$text-color:		#292E37; // gunmetal
-$background-color:	#fff;
+$text-color:		#111;
+$background-color:	#fafafa;
 $brand-color:		#0FACF3; // links
 
 
@@ -24,6 +24,9 @@ $grey-color-dark:	darken($grey-color, 25%);
 // custom settings
 $header-height:		56px;
 $header-color:		#fafafa;
+$content-color:		#fff;
+$link-color:		#2a7ae2;
+
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
@@ -38,6 +41,19 @@ $header-color:		#fafafa;
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import 'minima';
 
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($link-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
 
 .site-header {
 	border-top: none;
@@ -70,7 +86,9 @@ $header-color:		#fafafa;
 			padding-bottom: (4+ $header-height - ($base-font-size * $base-line-height)) / 2;
 		}
 	}
-	
+}
 
+.page-content {
+	background-color: $content-color;
 }
 
