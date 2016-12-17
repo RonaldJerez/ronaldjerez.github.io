@@ -1,5 +1,4 @@
-title: Testing title
-author: Ronald Jerez
+title: "Test Title"
 permalink: /blog/:year/:title
 
 # build settings
