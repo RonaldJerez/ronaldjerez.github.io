@@ -1,0 +1,24 @@
+body,h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif
+}
+.w3-third img {
+    margin-bottom: -6px;
+    opacity: 0.8;
+    cursor: pointer
+}
+.w3-third img:hover {
+    opacity: 1
+}
+
+.w3-sidebar {
+    z-index: 3;
+    width: 300px;
+    font-weight: bold
+}
+
+.w3-overlay {
+    cursor: pointer
+}
+.w3-content {
+    max-width: 600px;
+}

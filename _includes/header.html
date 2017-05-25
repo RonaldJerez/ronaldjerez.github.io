@@ -1,27 +1,23 @@
-<header class="site-header" role="banner">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" id="mySidebar"><br>
+  <img src="/assets/nav-img-bw.jpg" class="w3-circle w3-grayscale" width="150px" height="150px" />
+  <h3 class="w3-padding-16 w3-margin-bottom w3-center"><b>{{ site.title | escape }}</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  
+  {% assign sorted_pages = site.pages | sort:"order" %}
+  {% for node in sorted_pages %}
+    {% if node.title %}
+    <a href="{{ node.url | relative_url }}" onclick="w3_close()" class="w3-bar-item w3-button {% if page.url == node.url %}w3-red{% endif %}">{{ node.title | escape | upcase }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
-
-    <nav class="site-nav">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </span>
-
-      <div class="trigger">
-        {% for node in site.pages %}
-          {% if node.title %}
-          <a class="page-link {% if page.url == node.url %}active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title | escape }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">{{ site.title | escape }}</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" id="myOverlay" onclick="w3_close()" title="close side menu"></div>
+
