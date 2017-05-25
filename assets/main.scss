@@ -3,85 +3,32 @@
 ---
 @charset 'utf-8';
 
-// Our variables
-$base-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$base-font-size:	16px;
-$base-font-weight:	400;
-$small-font-size:	$base-font-size * 0.875;
-$base-line-height:	1.5;
+// // Our variables
+// $base-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$spacing-unit:		30px;
+// // custom settings
+// $header-height:		70px;
+// $header-color:		#542E71;
+// $content-color:		#FFF;
+// $link-color:		#2a7ae2;
 
-$text-color:		#111;
-$background-color:	#fafafa;
-$brand-color:		#0FACF3; // links
+// $brand-color:		lighten($header-color, 50%); // title
+// $text-color:		#273043; // gunmetal
+// $background-color:	#fafafa; // bleed to footer color
 
+// $grey-color:		#9facbd;
+// $grey-color-light:	lighten($grey-color, 25%);
+// $grey-color-dark:	darken($grey-color, 25%);
 
-$grey-color:		#9facbd;
-$grey-color-light:	lighten($grey-color, 25%);
-$grey-color-dark:	darken($grey-color, 25%);
+// // Minima also includes a mixin for defining media queries.
+// // Use media queries like this:
+// // @include media-query($on-palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
 
-// custom settings
-$header-height:		56px;
-$header-color:		#fafafa;
-$content-color:		#fff;
-$link-color:		#2a7ae2;
-
-
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-// Import partials from the `minima` theme.
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import 'minima';
-
-a {
-  color: $link-color;
-
-  &:visited {
-    color: darken($link-color, 15%);
-  }
-}
-
-.site-header {
-	border-top: none;
-	border-bottom: 1px solid $grey-color-light;
-	background-color: $header-color;
-	min-height: $header-height;
-
-	.site-title {
-		color: $brand-color;
-		font-weight: bold;
-
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
-	.page-link {
-		color: $grey-color;
-
-		&:visited {
-			color: $grey-color;
-		}
-		&:hover {
-			color: $grey-color-dark;
-			text-decoration: none;
-		}
-		&.active {
-			color: $brand-color;
-			border-bottom: 1px solid $brand-color;
-			padding-bottom: (4+ $header-height - ($base-font-size * $base-line-height)) / 2;
-		}
-	}
-}
-
-.page-content {
-	background-color: $content-color;
-}
+// // Import partials from the `minima` theme.
+// // @import 'minima';
+@import 'style';
