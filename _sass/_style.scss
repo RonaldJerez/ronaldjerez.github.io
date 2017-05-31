@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5 {
+body,h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif
 }
 .w3-third img {
@@ -21,4 +21,24 @@ body,h1,h2,h3,h4,h5 {
 }
 .w3-content {
     max-width: 600px;
+}
+
+.post-seperator {
+    margin: 5em auto;
+    width: 65%;
+    border-top-color: #bbb;
+}
+
+.post-header {
+    .post-title {
+        margin: 0;
+    }
+    .post-meta {
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+}
+
+.post-link {
+    margin-top: 2em;
 }

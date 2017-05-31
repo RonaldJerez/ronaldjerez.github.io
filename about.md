@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 order: 2
-class: w3-blue-gray w3-text-light-grey
 ---
 
 <!-- About section -->

@@ -2,12 +2,10 @@
 layout: default
 ---
 
-<article class="w3-container w3-padding-32 w3-padding-large w3-sand" itemscope itemtype="http://schema.org/BlogPosting">
+{% assign post = page %}
+<article class="w3-container w3-card w3-padding-32 w3-padding-large w3-white w3-margin" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="w3-content">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    </header>
+    {% include postHeader.html %}
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}

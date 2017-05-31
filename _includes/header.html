@@ -1,6 +1,6 @@
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" id="mySidebar"><br>
-  <img src="/assets/nav-img-bw.jpg" class="w3-circle w3-grayscale" width="150px" height="150px" />
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center w3-card" id="mySidebar"><br>
+  <img src="/assets/nav-img-color.jpg" class="w3-circle" width="150px" height="150px" />
   <h3 class="w3-padding-16 w3-margin-bottom w3-center"><b>{{ site.title | escape }}</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   
@@ -13,11 +13,10 @@
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16 w3-card">
   <span class="w3-left w3-padding">{{ site.title | escape }}</span>
   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" id="myOverlay" onclick="w3_close()" title="close side menu"></div>
-

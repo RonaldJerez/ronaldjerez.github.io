@@ -3,7 +3,7 @@ layout: page
 title: Contact Me
 permalink: /contact/
 order: 3
-class: w3-light-grey
+class: w3-white
 ---
 
 <p>Need to contact me? Fill out the form and fill me in with the details. I love meeting new people!</p>
@@ -20,5 +20,5 @@ class: w3-light-grey
 		<label>Message</label>
 		<textarea class="w3-input w3-border" name="Message" required></textarea>
 	</div>
-	<button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+	<button type="submit" class="w3-button w3-block w3-red w3-margin-bottom">Send Message</button>
 </form>
